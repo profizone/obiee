@@ -53,17 +53,17 @@ cd /u01/oracle/OBIEE/user_projects/domains/uat_bi/bitools/bin
 
 Navigate to the directory /Middlewarehomebi12/user_projects/domains/bi12/bitools/bin to stop all servers
 
-```Python
+```Shell
 ./stop.sh 
 ```
 Delete liverpd.* and all other versions of RPDs in the directory 
 
-```Python
+```Shell
 /OBIEE/user_projects/domains/bi12/bidata/service_instance/ssi/metadata/datamodel/customizations          
 ```
 
 Clear the content of file default_diff.xml in the directory:
-```Python
+```Shell
 /OBIEE/user_projects/domains/bi12/bidata/service_instances/ssi/metadata/datamodel/customizations/default
 ```
 
@@ -77,6 +77,17 @@ Login in to Weblogic as weblogic user to ensure all services are up and running
 
 Now upload new RPD using
 
-```Python
+```Shell
 ./data-model-cmd.sh uploadrpd
 ```
+
+## Import Service Instance
+
+Import has to be executed from ./wlst.sh
+
+```Shell
+cd /u01/oracle/OBIEE/oracle_common/common
+./wlst.sh
+importServiceInstance('/u01/oracle/OBIEE/user_projects/domains/support_bi','support_instance','/home/orafexobiee/prod_instance20190725.bar',true,true,true,'Admin123')
+```
+
