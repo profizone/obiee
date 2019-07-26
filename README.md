@@ -91,3 +91,10 @@ cd /u01/oracle/OBIEE/oracle_common/common
 importServiceInstance('/u01/oracle/OBIEE/user_projects/domains/support_bi','support_instance','/home/orafexobiee/prod_instance20190725.bar',true,true,true,'Admin123')
 ```
 
+## Create new OBIEE Instance
+
+Execute config.sh from: /u01/oracle/OBIEE/bi/bin
+
+```Shell
+./config.sh -responseFile /home/oracle/obiee_config.rsp -invPtrLoc /u01/oracle/OBIEE/oraInst.loc -ignoreSysPrereqs
+```
