@@ -1,4 +1,4 @@
-# OBIEE WLST
+# OBIEE Notes
 
 ## Script: setRestartMax.py
 Set OBIEE server Restart Max attribute. To call the script run: ./wlst.sh setRestartMax.py
@@ -26,7 +26,7 @@ print 'Script Completed'
 disconnect()
 exit()
 ```
-## Useful Commands
+## Useful WLST Commands
 
 ```python
 # list all
@@ -42,3 +42,8 @@ print 'Script completed'
 print servers
 ```
 
+## Uplaod RPD
+
+```Bash
+./data-model-cmd.sh uploadrpd -I /home/oracle/uat_bi.rpd -W Admin123 -U weblogic -P pass -SI uat_instance
+```
