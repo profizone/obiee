@@ -2,9 +2,10 @@
 
 ## Script: setRestartMax.py
 Set OBIEE server Restart Max attribute. To call the script run: ./wlst.sh setRestartMax.py
+
 Oracle_Home/oracle_common/common/wlst.sh
 
-```
+```python
 connect(username='weblogic',password='pass',url='t3://localhost:9900')
 
 print 'Script start'
