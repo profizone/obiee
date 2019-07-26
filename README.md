@@ -28,7 +28,7 @@ exit()
 ```
 ## Useful Commands
 
-```
+```python
 # list all
 ls()
 # list attributes
@@ -37,5 +37,8 @@ ls('a')
 cd('\\')
 # go to folder: Servers
 cd('/Servers')
+# print to the screen
+print 'Script completed'
+print servers
 ```
 
