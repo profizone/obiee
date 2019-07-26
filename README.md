@@ -47,3 +47,28 @@ print servers
 ```Bash
 ./data-model-cmd.sh uploadrpd -I /home/oracle/uat_bi.rpd -W Admin123 -U weblogic -P pass -SI uat_instance
 ```
+### Clean-Up old repository content
+
+Navigate to the directory /Middlewarehomebi12/user_projects/domains/bi12/bitools/bin and issue
+
+```Bash
+         sh stop.sh to stop all services
+```
+Delete liverpd.* and all other versions of RPDs in the directory 
+
+```Bash
+/OBIEE/user_projects/domains/bi12/bidata/service_instance/ssi/metadata/datamodel/customizations          
+```
+
+Clear the content of file default_diff.xml in the directory:
+```Bash
+/OBIEE/user_projects/domains/bi12/bidata/service_instances/ssi/metadata/datamodel/customizations/default
+```
+
+Note: Do not delete this file
+
+Issue the command sh start.sh to start all services from bitools/bin directory
+
+The system should come up with default RPD
+
+Login in to Weblogic as weblogic user to ensure all services are up and running
