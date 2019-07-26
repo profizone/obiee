@@ -44,7 +44,10 @@ print servers
 
 ## Uplaod RPD
 
+Upload repository with data-model uploadrpd located under:
+
 ```Bash
+cd /u01/oracle/OBIEE/user_projects/domains/uat_bi/bitools/bin
 ./data-model-cmd.sh uploadrpd -I /home/oracle/uat_bi.rpd -W Admin123 -U weblogic -P pass -SI uat_instance
 ```
 ## Clean-Up old repository content
@@ -72,3 +75,9 @@ Issue the command sh start.sh to start all services from bitools/bin directory
 The system should come up with default RPD
 
 Login in to Weblogic as weblogic user to ensure all services are up and running
+
+Now upload new RPD using
+
+```Python
+./data-model-cmd.sh uploadrpd
+```
