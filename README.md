@@ -52,19 +52,19 @@ cd /u01/oracle/OBIEE/user_projects/domains/uat_bi/bitools/bin
 ```
 ## Clean-Up old repository content
 
-Navigate to the directory /Middlewarehomebi12/user_projects/domains/bi12/bitools/bin and issue
+Navigate to the directory /Middlewarehomebi12/user_projects/domains/bi12/bitools/bin to stop all servers
 
-```Bash
-         sh stop.sh to stop all services
+```Python
+./stop.sh 
 ```
 Delete liverpd.* and all other versions of RPDs in the directory 
 
-```Bash
+```Python
 /OBIEE/user_projects/domains/bi12/bidata/service_instance/ssi/metadata/datamodel/customizations          
 ```
 
 Clear the content of file default_diff.xml in the directory:
-```Bash
+```Python
 /OBIEE/user_projects/domains/bi12/bidata/service_instances/ssi/metadata/datamodel/customizations/default
 ```
 
