@@ -42,15 +42,14 @@ print 'Script completed'
 print servers
 ```
 
-## Uplaod RPD
+## Uplaod RPD & Clean-Up Old Repository Content
 
 Upload repository with data-model uploadrpd located under:
 
-```Bash
+```Python
 cd /u01/oracle/OBIEE/user_projects/domains/uat_bi/bitools/bin
 ./data-model-cmd.sh uploadrpd -I /home/oracle/uat_bi.rpd -W Admin123 -U weblogic -P pass -SI uat_instance
 ```
-## Clean-Up old repository content
 
 Navigate to the directory /Middlewarehomebi12/user_projects/domains/bi12/bitools/bin to stop all servers
 
