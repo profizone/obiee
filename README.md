@@ -101,5 +101,5 @@ Execute config.sh from: /u01/oracle/OBIEE/bi/bin
 ## Tnsnames.ora location
 
 ```Shell
-/u01/oracle/OBIEE/fmwconfig/config/bienv/core
+/u01/oracle/OBIEE/user_projects/domains/bi/config/fmwconfig/bienv/core
 ```
